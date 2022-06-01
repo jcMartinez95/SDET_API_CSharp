@@ -1466,11 +1466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlos.martinez\\RiderProjects\\SDET_API_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp.csproj",
+      "projectUniqueName": "C:\\Users\\carlos.martinez\\source\\Nueva carpeta\\3rd correct\\SDETAPI_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp.csproj",
       "projectName": "SDETAPI_CSharp",
-      "projectPath": "C:\\Users\\carlos.martinez\\RiderProjects\\SDET_API_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp.csproj",
+      "projectPath": "C:\\Users\\carlos.martinez\\source\\Nueva carpeta\\3rd correct\\SDETAPI_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp.csproj",
       "packagesPath": "C:\\Users\\carlos.martinez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlos.martinez\\RiderProjects\\SDET_API_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp\\obj\\",
+      "outputPath": "C:\\Users\\carlos.martinez\\source\\Nueva carpeta\\3rd correct\\SDETAPI_CSharp\\SDETAPI_CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\carlos.martinez\\AppData\\Roaming\\NuGet\\NuGet.Config",

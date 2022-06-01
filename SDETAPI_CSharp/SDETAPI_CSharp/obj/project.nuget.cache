@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M3G9oSA81yHcriEx6pt6sGkefVpM3uDZ4ovoreSy2o8VxlBdCnq5TCih+Z39qlVKVJKcUgI7YCoDVtRsCbHHIQ==",
+  "dgSpecHash": "jzkXRj2DZF6Bldr+wwr3imYpU86IvtC4Hu/1UDh2YPqE5SHy1Q7Ksel1BgsBeNB5ib5/2Hdq1i2G2qopESyEYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carlos.martinez\\RiderProjects\\SDET_API_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp.csproj",
+  "projectFilePath": "C:\\Users\\carlos.martinez\\source\\Nueva carpeta\\3rd correct\\SDETAPI_CSharp\\SDETAPI_CSharp\\SDETAPI_CSharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carlos.martinez\\.nuget\\packages\\abcpdf\\12.2.0.4\\abcpdf.12.2.0.4.nupkg.sha512",
     "C:\\Users\\carlos.martinez\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
