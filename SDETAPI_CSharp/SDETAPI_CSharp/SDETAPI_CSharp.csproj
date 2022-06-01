@@ -23,6 +23,8 @@
 
   <ItemGroup>
     <Folder Include="Features\NasaOpenAPI\" />
+    <Folder Include="Requests\HealthcareGov\Posts" />
+    <Folder Include="Requests\NasaOpenAPI\Posts" />
   </ItemGroup>
 
 </Project>
