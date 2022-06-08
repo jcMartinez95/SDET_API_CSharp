@@ -1,6 +1,7 @@
 ﻿
 using RestSharp;
 using Newtonsoft.Json.Linq;
+using NUnit.Framework;
 
 
 namespace SDETAPI_CSharp.Tests;
@@ -8,7 +9,7 @@ namespace SDETAPI_CSharp.Tests;
 //Fifth Pull Request
 public class Program
 {
-    
+    [Test]
     public static void FifthPullJph()
     {
         string fileName = CurrentPath("Requests/JsonPlaceHolder/Posts/jsonPhPostRequest.json");
