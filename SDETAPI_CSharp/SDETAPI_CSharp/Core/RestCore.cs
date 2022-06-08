@@ -1,7 +1,4 @@
-﻿
-using RestSharp;
-using NUnit.Framework;
-using SDETAPI_CSharp.Features.JsonPlaceHolder;
+﻿using RestSharp;
 
 namespace SDETAPI_CSharp;
 
@@ -10,55 +7,45 @@ public class RestCore
 {
     private static RestRequest? restRequest;
 
-    
-    public static IRestResponse CreatePostRequest(jsonPhFeature body)
+    public static IRestResponse CreateRequestWithHeaders(string Url, string methodType)
     {
-        switch (body.Method.ToUpper())
+        switch (methodType.ToUpper())
         {
             case "GET":
-                restRequest = new RestRequest(body.Url, Method.GET);
+                restRequest = new RestRequest(Url, Method.GET);
                 break;
 
             case "POST":
-                restRequest = new RestRequest(body.Url, Method.POST);
+                restRequest = new RestRequest(Url, Method.POST);
                 break;
 
             case "PUT":
-                restRequest = new RestRequest(body.Url, Method.PUT);
+                restRequest = new RestRequest(Url, Method.PUT);
                 break;
 
             case "DELETE":
-                restRequest = new RestRequest(body.Url, Method.DELETE);
+                restRequest = new RestRequest(Url, Method.DELETE);
                 break;
 
             default:
-                throw new NotImplementedException($"Rest Method not valid. Must specify correctly. Current value: [{body.Method}]" +
+                throw new NotImplementedException($"Rest Method not valid. Must specifiy correctly. Current value: [{methodType}]" +
                                                   $"Current valid types: Get and Post");
         }
         restRequest.RequestFormat = DataFormat.Json;
-        IRestResponse response = AddPostRequestBody(restRequest, body);
+        IRestResponse response = AddRequestBody(restRequest);
         return response;
     }
 
-    public static IRestResponse AddPostRequestBody(RestRequest restRequest, jsonPhFeature body)
+    public static IRestResponse AddRequestBody(RestRequest restRequest)
     {
-        
         RestClient restClient = new RestClient();
-        restRequest.AddParameter("application/json; charset=utf-8", restRequest.AddJsonBody(body));
-        IRestResponse serviceResponse = restClient.Execute(restRequest);
+        restRequest.AddParameter("application/json; charset=utf-8", ParameterType.RequestBody);
+        IRestResponse serviceReponse = restClient.Execute(restRequest);
 
-        if (!string.Equals(serviceResponse.StatusCode.ToString(), body.Status, StringComparison.OrdinalIgnoreCase))
-            Console.WriteLine("\nError: "+ serviceResponse.ErrorMessage);
-        
-        Assert.AreEqual(serviceResponse.StatusCode.ToString(), body.Status);
-        Assert.That((int)serviceResponse.StatusCode, Is.EqualTo(body.StatusCode));
-        
-        Console.Write("\nStatus Code: " + serviceResponse.StatusCode);
-        Console.Write("\nStatus Code Num: " + (int)serviceResponse.StatusCode);
-        
-        return serviceResponse;
+        return serviceReponse;
         
         
     }
-
+    
+    
 }
